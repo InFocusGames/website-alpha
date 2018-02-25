@@ -1,24 +1,42 @@
 <!doctype html>
 
-<html lang="en">
+<html lang='en'>
 
 <head>
-
   <title>Indizr</title>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+  <link href='img/icon-100.png' rel='icon' type='image/x-icon' />
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css'>
+  <link rel="stylesheet prefetch" href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='css/landing.css'>
+  <link rel='canonical' href='https://indizr.com'>   
   
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  
-  <link rel="stylesheet" href="css/desmond.css"> <!-- Custom styles to tweak default Bootstrap design -->
-  
-  <link rel="canonical" href="https://indizr.com"> 
-  <link href="img/icon-100.png" rel="icon" type="image/x-icon" />
-  
-      <script type="application/ld+json">
+  <style>
+    body {
+      background: url(img/zahrani.jpg);
+      background-position: center center;
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      padding: 2rem 4%;
+    }
+    
+    h1, p {
+      color: white;
+      width: 85%;
+      opacity: 0.875;
+      }
       
+    p {
+      background: black;
+      padding: 0.25rem 0.5rem;
+      max-width: 400px;
+      }
+   
+  </style>
+  
+  <script type='application/ld+json'>    
       {
         "@context": "http://schema.org/Organization",
         "@type": "Organization",
@@ -28,16 +46,10 @@
         "email": "admin@indizr.com",
         "address": "344 20th Street, Suite B-3; Oakland, CA 94612", 
         "description": "Indizr provides information and services to create freedom for people online."
-      }
-      
-    </script>
-    
-    
-     
-
-    <!-- Matomo -->
-    
-    <script type="text/javascript">
+      }      
+  </script>
+  <!-- Matomo -->
+  <script type='text/javascript'>
       var _paq = _paq || [];
       /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
       _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
@@ -51,150 +63,49 @@
        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
       })();
-    </script>
-    
-    <!-- End Matomo Code -->
-
-    <noscript></noscript>
-  
-  
+  </script>
+  <!-- End Matomo Code -->
+  <noscript></noscript>
 </head>
+
+
 
 <body>
 
- <div id="flag">
-  
-    <img src="https://indizr.com/lab/desmond/img/logo-white-1000.png" alt="logo">
-   
-   <h1>Create freedom.</h1>
-   
-   <ul>
-     <li><a href="newsletter">Newsletter</a></li>
-     <li><a href="https://indizr.wordpress.com">Blog</a></li>
-     <li><a href="https://twitter.com/itsindizr">Twitter</a></li>
-     <li><a href="https://github.com/indizr">GitHub</a></li>
-   </ul>
+  <div class="flag">
+    <img src="img/logo-white-500.png" alt="Indizr logo">
+    
+    
+    <ul class="social">
+      <a href="https://indizr.wordpress.com/"><img src="img/wordpress.png" alt="WordPress"></a>
+      <a href="https://indizr.wordpress.com/feed/"><img src="img/rss.png" alt="RSS"></a>
+      <!-- <a href=""><img src="img/email.png" alt="Email"></a> -->
+      <a href="https://twitter.com/itsindizr"><img src="img/twitter.png" alt="Twitter"></a>
+      <a href="https://github.com/indizr"><img src="img/github.png" alt="GitHub"></a>
+    </ul>
+    
+    
+   <!-- Turning this search box element off for now, since there's not much to search. But will save for later. Created using generation tool at https://duckduckgo.com/search_box 
+    
+    <span class="search">
+
+      <iframe src="https://duckduckgo.com/search.html?width=200&site=indizr.com&prefill=search" style="overflow:hidden;margin:0;padding:0;width:258px;height:40px;" frameborder="0"></iframe>
+    </span> -->
+    
   </div><!-- End flag -->
- 
- 
- 
- <style>
- 
-   body {
-     background: url(img/zahrani.jpg);
-     background-position: center center;
-     background-size: cover;
-     background-attachment: fixed;
-     background-repeat: no-repeat;
-     padding: 2rem 4%;
-   }
-   
-   a:hover {
-     color: white;
-     }
-   
-   body * {color: white}
-   
-   #flag {
-     width: 100%;
-     max-width: 500px;
-   }
-   
-   
-   #flag img {
-     width: 90%;
-     max-width: 400px; 
-     margin-bottom: 0.25rem
-    }
-   
-   #flag h1 {margin-bottom: 1.5rem}
-   
-   #flag img, #flag h1, #flag li {display: inline-block;}    
-   
-   #flag ul {
-     padding: 0 0.25rem;
-    }
- 
-   #flag li {background: #FF9100; padding: 0.25rem 0.5rem; margin-right: 0.5rem}
- 
- 
- </style>
- 
- 
- <!--
- 
- <h4>Get a dose of independence in your inbox</h4>
-         <img src="https://indizr.com/newsletter/img/mailman.png" alt="toy mailman" id="mailman">       
+
+  <div class="contentpalette">
+    <h1>Innovate toward independence.</h1>
+    <p>It's time to re-build how news is delivered from the ground up. We have <a href="https://indizr.wordpress.com/2018/02/24/we-need-to-re-build-news-delivery-heres-how/">some ideas</a> about that we're trying out right now.</p>
+
+<p>If you want to follow along, check out our <a href="">newsletter</a>, <a href="">blog</a>, or <a href="">Twitter feed</a>. There's also an Indizr <a href="">GitHub page</a> if you want to collaborate with us on building open-source stuff.</p>
+
+  </div><!-- End contentpalette-->
 
 
-
-      <p>Sign up below to receive our free newsletter, Indizr Weekly. It's the easiest way to keep up with news about privacy, free speech, and hacking.</p> 
-
-      <p>As we see it, these are the three pillars of independence for everyone who uses the internet. Please join us!</p>
-
-   
-   
-   <div id="mc_embed_signup">
-   
-   
-  <form action="https://indizr.us15.list-manage.com/subscribe/post?u=cb5b2262972b0cb6543967aa9&amp;id=0a7408a884" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div id="mc_embed_signup_scroll">
-<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-<div class="mc-field-group">
-	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
-</label>
-	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-</div>
-<div class="mc-field-group">
-	<label for="mce-FNAME">First Name </label>
-	<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
-</div>
-<div class="mc-field-group">
-	<label for="mce-LNAME">Last Name </label>
-	<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
-</div>
-	<div id="mce-responses" class="clear">
-		<div class="response" id="mce-error-response" style="display:none"></div>
-		<div class="response" id="mce-success-response" style="display:none"></div>
-	</div>    
-		
-    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_cb5b2262972b0cb6543967aa9_0a7408a884" tabindex="-1" value=""></div>
-    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-    </div>
-</form>
-<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-
-</div>
- 
- 
-
-
-  <ul>
-    <li>Subscribe</li>
-    <li>Build</li>
-    <li>Connect</li>
-    <li>Search</li>  
-  </ul>
-
-
-  <ul>
-    <li>WordPress</li>
-    <li>Twitter</li>
-    <li>GitHub</li>
-    <li>Patreon</li>
-    <li>Email</li>
-  </ul>
-
-
--->
-
-
-
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+  <script src="js/desmond.js"></script>
 
 
 
