@@ -45,6 +45,7 @@ body>* {
 
 .landingcontent p {
   font-size: 120%;
+  max-width: 30em; 
 }
 
 .social {}
@@ -55,4 +56,25 @@ body>* {
   max-width: 45px;
   margin: 0.75rem 0.75rem 0.75rem 0;
   }
+
+
+@media screen and (max-width: 800px) /* A breakpoint to optimize elements for tablets... */ {}
+
+
+@media screen and (max-width: 500px) /* A breakpoint to optimize elements for phones... */ {
+
+  body>* {
+  padding: 0 4%;
+  padding-left: 4%;
+  } 
+
+  .flag {
+    padding-top: 3.5rem;
+  }
+  
+  .landingcontent p {
+    max-width: none; 
+  }
+  
+}
 
