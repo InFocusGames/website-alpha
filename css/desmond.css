@@ -1,0 +1,84 @@
+/* 
+
+Desmond
+Copyright (c) 2017-018 Peter A. McKay
+Free to use under MIT license.
+
+
+
+
+
+Contents
+
+- Basics & Layout
+- Custom Typography
+
+
+
+/*----------------------------------------------------------------------------------
+
+Basics & Layout
+
+------------------------------------------------------------------------------------  */
+
+
+@import "https://designmodo.github.io/Flat-UI/dist/css/flat-ui.min.css";
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css";
+@import "https://daneden.github.io/animate.css/animate.min.css";
+
+
+
+/*----------------------------------------------------------------------------------
+
+Custom Typography
+
+------------------------------------------------------------------------------------  */
+
+
+@font-face {
+  font-family: 'Hattori Hanzo';
+  src: url('hattori_hanzo/webfont.eot') format('eot'), url('fonts/hattori_hanzo/webfont.eot?iefix') format('eot'),
+       url('hattori_hanzo/webfont.woff') format('woff'),
+       url('hattori_hanzo/webfont.ttf') format('truetype'),
+       url('hattori_hanzo/webfont.svg#webfont') format('svg');
+}
+
+* {color: black}
+
+a, a:visited {
+  text-decoration: none;
+  color: #FF9100; 
+  font-weight: bold;
+}
+
+a:hover, a:focus {
+  color: #FF9100; 
+  text-decoration: underline;
+  }
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Hattori Hanzo', sans-serif;
+  color: black; 
+  font-weight: normal
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {font-weight: inherit}
+
+hr {
+  display: block;
+  border: 0;
+  height: 1px;
+  background: #BFBFBF;
+  clear: both;
+}
+
+ul {list-style: square inside}
+
+ol {list-style: decimal inside}
+
+li {margin-bottom: 1.5rem;}
+
+
+
+

@@ -1,141 +1,50 @@
 /* 
 
-Desmond
-Copyright (c) 2017-018 Peter A. McKay
+Indizr Landing Page Styles
+Copyright (c) 2018 Peter A. McKay
 Free to use under MIT license.
 
-Contents
+These styles are customizations from main Desmond stylesheet...
 
-- Basics & Layout
-- Custom Typography
-- Flag Styles
-- Carousel Styles
-- Footer Styles
-- Additional Media Queries
+
+
+
 
 */
 
-
-
-/*----------------------------------------------------------------------------------
-
-Basics & Layout
-
-------------------------------------------------------------------------------------  */
-
-
-@import "https://designmodo.github.io/Flat-UI/dist/css/flat-ui.min.css";
-@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css";
-@import "https://daneden.github.io/animate.css/animate.min.css";
-
-
-
-/*----------------------------------------------------------------------------------
-
-Custom Typography
-
-------------------------------------------------------------------------------------  */
-
-
-@font-face {
-  font-family: 'Hattori Hanzo';
-  src: url('hattori_hanzo/webfont.eot') format('eot'), url('fonts/hattori_hanzo/webfont.eot?iefix') format('eot'),
-       url('hattori_hanzo/webfont.woff') format('woff'),
-       url('hattori_hanzo/webfont.ttf') format('truetype'),
-       url('hattori_hanzo/webfont.svg#webfont') format('svg');
+body {
+  background: url('../img/reader3000.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
-
-a, a:visited {
-  text-decoration: underline;
-  color: white; 
-  font-weight: bold;
-}
-
-a:hover, a:focus {color: #ff9100}
-
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Hattori Hanzo', sans-serif;
-  color: black; 
-  font-weight: normal
-}
-
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {font-weight: inherit}
-
-hr {
-  display: block;
-  border: 0;
-  height: 1px;
-  background: #BFBFBF;
-  clear: both;
-}
-
-ul {list-style: square inside}
-
-ol {list-style: decimal inside}
-
-li {margin-bottom: 1.5rem;}
-
-
-/*----------------------------------------------------------------------------------
-
-Flag Styles
-
-------------------------------------------------------------------------------------  */
-
-.flag {
-  padding: 1rem 0;
-}
-
-.flag img {
-  width: auto;
-  max-width: 200px;
-}
-
-.flag .social {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  float : right;
-  }
-
-.flag .social img {
-  height: 35px;
-  width: auto;
-  max-width: 50px;
-  margin-right: 0.5rem;
-  position: relative;
-  top: 1rem
-}
-
-/*----------------------------------------------------------------------------------
-
-Carousel Styles
-
-------------------------------------------------------------------------------------  */
-
-
-
-
-/* Add this in later from working version of the carousel used in other projects... */
-
-
-
-
-/*----------------------------------------------------------------------------------
-
-Footer Styles
-
-------------------------------------------------------------------------------------  */
-
-/*  Add this in later as needed when we have pages with footers...
-
 
   
-/*----------------------------------------------------------------------------------
+p, h1, h2, h3, h4, h5, h6, li {color: white}
 
-Additional Media Queries
+.flag {
+  background: #363636;
+  padding: 0.75rem;
+  position: fixed;
+  bottom: 15%;
+  width: 100%;
+  border-bottom: 2px solid #c4c4c4;
+}
 
-------------------------------------------------------------------------------------  */
- 
- 
+img.logo {max-width: 175px}
+
+ul.social {
+  padding: 0;
+  display: inline-block;
+  float: right;
+}
+
+.social img {
+  width: 25%;
+  max-width: 30px;
+  margin-right: 0.25rem;
+  position: relative;
+  top: 0.75rem;
+}
+
