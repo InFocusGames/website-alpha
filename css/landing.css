@@ -11,21 +11,22 @@ These styles are customizations from main Desmond stylesheet...
 
 
 
-
 body {
   background: #454545;
   padding-bottom: 2rem;
 }
 
 body>* {
-  padding: 0 2%;
-  padding-left: 12%;
+  padding: 0 5%;
   } 
 
 .flag {
-  background: black;
+  background: url('../img/graphpaper.jpg');
+  background-size: 35% auto;
+  background-repeat: repeat;
+  background-position: center center;
   padding-top: 5rem;
-  padding-bottom: 1.5rem;
+  padding-bottom: 2rem;
 }
 
 .logo {
@@ -34,21 +35,33 @@ body>* {
 }
 
 .landingcontent {
- width: 75%;
 }
 
 .landingcontent>* {
   display: inline-block;
-  color: #f5f5f5;
   margin-bottom: 2.5rem;
+  }
+
+.landingcontent h2 {
+  color: white;
   }
 
 .landingcontent p {
   font-size: 120%;
-  max-width: 30em; 
+  color: white;
 }
 
-.social {}
+.landingcontent .centered {
+  display: block;
+  width: 70%;
+  max-width: 70rem;
+  }
+
+.social {
+  display: block;
+  width: 100%;
+  margin: 2rem auto;
+  }
 
 .social img {
   display: inline-block;
@@ -58,7 +71,14 @@ body>* {
   }
 
 
-@media screen and (max-width: 800px) /* A breakpoint to optimize elements for tablets... */ {}
+@media screen and (max-width: 1000px) /* A breakpoint to optimize elements for tablets... */ {
+
+  .landingcontent .centered {
+    width: auto;
+    max-width: none;
+   }
+
+}
 
 
 @media screen and (max-width: 500px) /* A breakpoint to optimize elements for phones... */ {
