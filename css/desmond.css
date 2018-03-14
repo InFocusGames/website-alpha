@@ -1,39 +1,27 @@
-/* 
+/*
 
 Desmond
-Copyright (c) 2017-018 Peter A. McKay
-Free to use under MIT license.
-
-
-
+Copyright (c) 2018, Peter A. McKay
+Free to use under MIT License
 
 
 Contents
 
-- Basics & Layout
-- Custom Typography
+- Basics & Typography
+- Navbar
+- Jumbotron & Cards
+- Footer
 
 
 
-/*----------------------------------------------------------------------------------
+----------------------------------------------------------
 
-Basics & Layout
+Basics & Typography
 
-------------------------------------------------------------------------------------  */
-
-
-@import "https://designmodo.github.io/Flat-UI/dist/css/flat-ui.min.css";
-@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css";
-@import "https://daneden.github.io/animate.css/animate.min.css";
+----------------------------------------------------------*/
 
 
-
-/*----------------------------------------------------------------------------------
-
-Custom Typography
-
-------------------------------------------------------------------------------------  */
-
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css");
 
 @font-face {
   font-family: 'Hattori Hanzo';
@@ -43,42 +31,138 @@ Custom Typography
        url('hattori_hanzo/webfont.svg#webfont') format('svg');
 }
 
-* {color: black}
-
-a, a:visited {
-  text-decoration: none;
-  color: #FF9100; 
-  font-weight: bold;
+@font-face {
+  font-family: 'Merriweather Sans Light';
+       src: url('merriweather-sans-light/MerriweatherSans-Light.otf') format('opentype'),
+            url('merriweather-sans-light/MerriweatherSans-Regular.otf') format('opentype'),
+            url('merriweather-sans-light/MerriweatherSans-Italic.otf') format('opentype'),
+            url('merriweather-sans-light/MerriweatherSans-Bold.otf') format('opentype'),
+            url('merriweather-sans-light/MerriweatherSans-BoldItalic.otf') format('opentype'),
+            url('merriweather-sans-light/MerriweatherSans-ExtraBold.otf') format('opentype'),
+            url('merriweather-sans-light/MerriweatherSans-ExtraBoldItalic.otf') format('opentype'),
+            url('merriweather-sans-light/MerriweatherSans-LightItalic.otf') format('opentype');
 }
 
-a:hover, a:focus {
-  color: #FF9100; 
-  text-decoration: underline;
+html, html * {
+  font-family: 'Merriweather Sans Light', 'Open Sans', Helvetica, Arial, sans-serif;
+  line-height: 1.5;
   }
 
+.navbar, .navbar *, h1, h2, h3, h4, h5, h6 {
+font-family: 'Hattori Hanzo', 'Open Sans', Helvetica, Arial, sans-serif;
+}
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Hattori Hanzo', sans-serif;
-  color: black; 
-  font-weight: normal
-}
+  margin-bottom: 1rem;
+  line-height: 1.3;
+  }
+  
+/*
+.subhead {
+  font-weight: normal;
+  font-style: italic;
+  }
+*/
 
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {font-weight: inherit}
+ a, a:visited {
+   color: #2A25B8; 
+   /* Indizr orange... color: #FF9100; */
+   font-weight: bold;
+   text-decoration: none;
+  }
+ 
+ a:hover {text-decoration: underline;}
+ 
+ 
+ img {
+   max-width: 100%;
+   }
 
-hr {
-  display: block;
-  border: 0;
-  height: 1px;
-  background: #BFBFBF;
-  clear: both;
-}
-
-ul {list-style: square inside}
-
-ol {list-style: decimal inside}
-
-li {margin-bottom: 1.5rem;}
-
-
+.container img, .container-fluid img {margin-bottom: 1.5rem;}
 
 
+/* ----------------------------------------------------------
+
+Navbar
+
+----------------------------------------------------------*/
+
+ 
+ .navbar {
+    margin-bottom: 1.25rem;
+  }
+ 
+ .nav-link {
+   position: relative;
+   top: 0.5rem;
+   }
+ 
+ .navbar-brand img {
+   width: auto;
+   max-width: 160px;
+   margin-right: 1rem;
+ }
+ 
+ .navbar-toggler {border:none} 
+ 
+ .navbar .socicons {
+   }
+ 
+  .navbar .socicons img {
+    width: auto;
+    max-width: 35px;
+    margin: 0.5rem 0.25rem;
+  }
+ 
+ .dropdown-menu {}
+
+ .dropdown-menu a, .dropdown-menu a:visited {color: white;}
+ 
+ .dropdown-menu a:hover {
+   background: #f2f2f2;
+   color: #2A25B8;
+   } 
+
+/* ----------------------------------------------------------
+
+Jumbotron & Cards
+
+----------------------------------------------------------*/
+
+.jumbotron, .jumbotron>*, .album {background: none}
+
+.jumbotron a.btn, .jumbotron a.btn:visited {color: white;}
+
+.card img {margin-bottom: 0.25rem;}
+
+.card a, .card a:visited {color: black;}
+
+.card a:hover {text-decoration: none;}
+
+.card-text, .album .row {margin-bottom: 1.5rem;}
+
+.album .row {}
+
+/* ----------------------------------------------------------
+
+Footer
+
+----------------------------------------------------------*/
+ 
+ .footer {
+ 
+   /* 
+   Turning this off for now, leaving background color to Bootstrap to see how that looks...
+   background: #2A25B8;
+   background: #464646;
+   */
+   
+   margin-top: 3rem; 
+   color: #ebebeb;
+   padding: 2rem 0 12rem 0;
+   position: relative;
+   top: 2rem;
+   }
+ 
+ 
+ 
