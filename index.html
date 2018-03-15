@@ -1,86 +1,347 @@
 <!doctype html>
 
-<html lang='en'>
+<html lang="en" >
 
 <head>
+
   <title>Indizr</title>
-  <meta charset='utf-8'>
-  <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
-  <link href='img/icon-100.png' rel='icon' type='image/x-icon' />
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css'>
-  <link rel="stylesheet prefetch" href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
-  <link rel='stylesheet' href='css/desmond.css'>
-  <link rel='stylesheet' href='css/landing.css'>  
-  <link rel='canonical' href='https://indizr.com'>   
+
+  <!-- Some meta tags... -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Site identity... -->
+  <link rel="canonical" href="https://indizr.com">
+  <link href="img/icon-100.png" rel="icon" type="image/x-icon" />
   
-  <script type='application/ld+json'>    
-      {
-        "@context": "http://schema.org/Organization",
-        "@type": "Organization",
-        "name": "Indizr",
-        "founder": "Peter A. McKay",
-        "foundingDate": "2017-07-20",
-        "email": "admin@indizr.com",
-        "address": "344 20th Street, Suite B-3; Oakland, CA 94612", 
-        "description": "Indizr provides information and services to create freedom for people online."
-      }      
-  </script>
-  <!-- Matomo -->
-  <script type='text/javascript'>
-      var _paq = _paq || [];
-      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-      _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
-      _paq.push(["setCookieDomain", "*.indizr.com"]);
-      _paq.push(['trackPageView']);
-      _paq.push(['enableLinkTracking']);
-     (function() {
-       var u="//pmckay.com/matomo/";
-       _paq.push(['setTrackerUrl', u+'piwik.php']);
-       _paq.push(['setSiteId', '1']);
-       var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-       g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-      })();
-  </script>
-  <!-- End Matomo Code -->
-  <noscript></noscript>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/desmond.css">
+
+  
+  <!-- Add schema.org metadata here later...
+
+    <script type="application/ld+json">
+      {}
+    </script>
+
+    -->
+
+    <noscript></noscript>  
+  
 </head>
 
 
 
 <body>
 
- <div class="flag">
 
-    <span class="centered"><img src="img/logo-black-1000.png" alt="Indizr logo" class="logo"></span>
 
- </div><!-- End flag-->
-   
-   
-   
-   
 
- <div class="landingcontent">
 
- 
-   <span class="centered">
-      <h2>Innovate toward independence.</h2>
-      <p>News delivery is broken. We're <a href="https://indizr.wordpress.com/2018/02/24/we-need-to-re-build-news-delivery-heres-how/">fixing it</a>. To learn more, subscribe to our <a href="newsletter">newsletter</a>, follow one of our social channels, or <a href="mailto:peter@indizr.com">email us</a> directly.</p>
-   
- 
-  <span class="social">
-      <a href="https://indizr.wordpress.com/feed/"><img src="img/rss.png" alt="RSS"></a>
-      <a href="https://indizr.wordpress.com/"><img src="img/wordpress.png" alt="WordPress"></a>
-             <a href="https://twitter.com/itsindizr"><img src="img/twitter.png" alt="Twitter"></a>
-      <a href="https://github.com/indizr"><img src="img/github.png" alt="GitHub"></a>
-        
-    </span> <!-- End social -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  
+  <a class="navbar-brand" href="https://indizr.com"><img src="img/logo-white-500.png" alt="indizr logo"></a>
+  
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
     
-</div> <!-- End landingcontent -->
+    <!--
+      <li class="nav-item active">
+        <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          DNDWG
+        </a>
+        <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+-->
+
+      <li class="nav-item">
+        <a class="nav-link" href="newsletter">Newsletter</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://indizr.wordpress.com" target="blank">Blog</a>
+      </li>
+      
+   <!--
+   
+      
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+      
+      
+
+
+      Sample code for a disabled link...
+      
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+
+    -->
+
+    </ul>
     
     
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-  <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+    <span class="socicons">
+      <a href="https://indizr.wordpress.com/feed/" target="blank"><img src="img/rss-white.png" alt="Twitter"></a>
+      <a href="https://github.com/indizr/" target="blank"><img src="img/github-white.png" alt="Patreon"></a>
+      <a href="https://twitter.com/itsindizr" target="blank"><img src="img/twitter-white.png" alt="GitHub"></a>
+    </span>
+    
+    
+  </div>
+</nav>
+
+
+    <main role="main">
+
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading">Innovate toward independence.</h1>
+          <p class="lead">News delivery is broken. We're helping to fix it. The challenge, we believe, isn't to optimize for Big Tech's platforms. It's to get news from publisher to consumer more directly.</p>
+
+<p>
+
+            <a href="mailto:admin@indizr.com" class="btn btn-primary my-3">Email Us</a>
+            <a href="newsletter" class="btn btn-primary my-3">Newsletter Sign-Up</a>
+            
+            <!-- 
+              <a href="#" class="btn btn-secondary my-2">Email Us</a>
+            -->
+            
+          </p>
+
+        </div>
+      </section>
+
+
+
+<!--
+
+      <div class="album py-5">
+        <div class="container">
+
+          <div class="row">
+          
+          
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="img/placeholder.jpg" alt="Card image cap">
+                 <div class="card-body">
+                  <a href="https://indizr.com"><h2>A headline for the card that runs a bit longer</h2></a>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-md btn-outline-secondary">Learn More</button>                 
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- End card -->
+ <!--           </div> <!-- End col-md-4 -->
+
+
+
+<!--
+
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="img/placeholder.jpg" alt="Card image cap">
+                 <div class="card-body">
+                  <a href="https://indizr.com"><h2>A headline for the card that runs a bit longer</h2></a>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-md btn-outline-secondary">Learn More</button>                 
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- End card -->
+<!--            </div> <!-- End col-md-4 -->
+
+
+
+
+<!--            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="img/placeholder.jpg" alt="Card image cap">
+                 <div class="card-body">
+                  <a href="https://indizr.com"><h2>A headline for the card that runs a bit longer</h2></a>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-md btn-outline-secondary">Learn More</button>                 
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- End card -->
+<!--            </div> <!-- End col-md-4 -->
+
+            
+<!--     </div> <!-- End row -->      
+     
+
+
+<!--     
+             <div class="row">
+          
+          
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="img/placeholder.jpg" alt="Card image cap">
+                 <div class="card-body">
+                  <a href="https://indizr.com"><h2>A headline for the card that runs a bit longer</h2></a>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-md btn-outline-secondary">Learn More</button>                 
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- End card -->
+<!--            </div> <!-- End col-md-4 -->
+
+<!--
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="img/placeholder.jpg" alt="Card image cap">
+                 <div class="card-body">
+                  <a href="https://indizr.com"><h2>A headline for the card that runs a bit longer</h2></a>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-md btn-outline-secondary">Learn More</button>                 
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- End card -->
+<!--            </div> <!-- End col-md-4 -->
+
+
+<!--            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="img/placeholder.jpg" alt="Card image cap">
+                 <div class="card-body">
+                  <a href="https://indizr.com"><h2>A headline for the card that runs a bit longer</h2></a>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-md btn-outline-secondary">Learn More</button>                 
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- End card -->
+<!--            </div> <!-- End col-md-4 -->
+
+            
+<!--     </div> <!-- End row -->        
+     
+     
+     
+     
+       
+<!--    </div> <!-- End container -->       
+<!--   </div> <!-- End album -->       
+                 
+            
+            
+
+
+    </main>
+
+
+
+
+<div class="footer bg-dark">
+
+
+ <div class="container-fluid">
+
+  <div class="row">
+
+     <div class="col-1"></div>
+  
+  
+     <div class="col-5">
+       <h5>Copyright (c) 2018, Indizr</h5>
+       <p>All site content is free to share and use, with appropriate attribution, under <a href="https://creativecommons.org/licenses/by/4.0/legalcode">Creative Commons 4.0</a> license.</p>
+     </div>
+
+
+
+
+   <!--
+   
+     <div class="col-3">
+       <p>Footer content</p>
+     </div>
+
+
+     <div class="col-3">
+       <p>Footer content</p>
+     </div>
+
+-->
+
+      
+  </div><!-- End row -->
+
+  </div> <!-- End container -->
+
+</div> <!-- End footer -->
+
+  <style>
+  
+    body {
+      background: url('img/graphpaper.jpg');
+      background-size: 225px auto;
+      background-repeat: repeat;
+    }
+    
+    .navbar {margin-bottom: 0}
+    
+   .jumbotron {
+    
+      margin-bottom: 0;
+   }
+  
+   .jumbotron h1 {font-weight: bold}
+   
+   .jumbotron * {}
+   
+   .card * {}
+   
+   .card {
+     border: 1px solid #a8a8a8
+     }
+     
+   
+   .album {}
+      
+
+  </style>
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src="js/desmond.js"></script>
+
 
 </body>
 
