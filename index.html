@@ -26,13 +26,14 @@
 
     -->
 
+
     <noscript></noscript>  
   
 </head>
 
 
 
-<body>
+<body id="homepage">
 
 
 
@@ -71,10 +72,14 @@
 -->
 
       <li class="nav-item">
-        <a class="nav-link" href="newsletter">Newsletter</a>
+        <a class="nav-link" href="about">#about</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="newsletter">#newsletter</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="https://indizr.wordpress.com" target="blank">Blog</a>
+        <a class="nav-link" href="https://indizr.wordpress.com" target="blank">#blog</a>
       </li>
       
    <!--
@@ -166,7 +171,7 @@
               <div class="card mb-4 box-shadow">
                 <img class="card-img-top" src="https://indizr.files.wordpress.com/2018/02/newsstand30001.jpg" alt="1980s NYC newsstand">
                  <div class="card-body">
-                  <a href="https://indizr.wordpress.com/2018/02/24/we-need-to-re-build-news-delivery-heres-how/"><h2>A blueprint for re-building the supply chain for news</h2></a>
+                  <a href="https://indizr.wordpress.com/2018/02/24/we-need-to-re-build-news-delivery-heres-how/"><h2>A blueprint for re-building the news supply chain</h2></a>
                   <p class="card-text">Three technologies could serve as the building blocks for a better way to get news to users without the big social and search silos.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
@@ -202,7 +207,7 @@
               <div class="card mb-4 box-shadow">
                 <img class="card-img-top" src="https://indizr.files.wordpress.com/2018/02/bezos.jpg">
                  <div class="card-body">
-                  <a href="https://indizr.wordpress.com/2018/02/02/ad-supported-sites-face-an-unlikely-new-rival-for-revenue-amazon/"><h2>Ad-supported media faces a new rival for revenue: Amazon</h2></a>
+                  <a href="https://indizr.wordpress.com/2018/02/02/ad-supported-sites-face-an-unlikely-new-rival-for-revenue-amazon/"><h2>Ad-supported media faces a new rival for revenue</h2></a>
                   <p class="card-text">Publishers are already up in arms about the combined hegemony of Facebook and Google in digital ads. Now another tech giant could be coming to eat everyone's lunch.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
@@ -257,7 +262,7 @@
               <div class="card mb-4 box-shadow">
                 <img class="card-img-top" src="https://www.thewrap.com/wp-content/uploads/2015/09/vice-logo.jpg" alt="Vice logo">
                  <div class="card-body">
-                  <a href="https://news.vice.com/en_us/contributor/peter-a-mckay"><h2>Helping Vice get Market Movers going</h2></a>
+                  <a href="https://news.vice.com/en_us/contributor/peter-a-mckay"><h2>Helping Vice launch Market Movers</h2></a>
                   <p class="card-text">Indizr founder Peter A. McKay worked with Vice News in 2017 to launch Market Movers, a sponsored-content project for their Money page. The coverage spanned everything from cryptocurrencies to retailing to gasoline prices.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
@@ -325,42 +330,32 @@
 
 </div> <!-- End footer -->
 
-  <style>
-  
-    body {
-      background: url('img/graphpaper.jpg');
-      background-size: 225px auto;
-      background-repeat: repeat;
-    }
-    
-    .navbar {margin-bottom: 0}
-    
-   .jumbotron {
-    
-      margin-bottom: 0;
-   }
-  
-   .jumbotron h1 {font-weight: bold}
-   
-   .jumbotron * {}
-   
-   .card * {}
-   
-   .card {
-     border: 1px solid #a8a8a8
-     }
-     
-   
-   .album {}
-      
-
-  </style>
 
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src="js/desmond.js"></script>
+
+    <!-- Matomo -->
+    
+    <script type="text/javascript">
+      var _paq = _paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+      _paq.push(["setCookieDomain", "*.indizr.com"]);
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+     (function() {
+       var u="//pmckay.com/matomo/";
+       _paq.push(['setTrackerUrl', u+'piwik.php']);
+       _paq.push(['setSiteId', '1']);
+       var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+       g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    
+    <!-- End Matomo Code -->
 
 
 </body>

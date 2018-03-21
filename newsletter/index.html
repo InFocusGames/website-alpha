@@ -4,7 +4,7 @@
 
 <head>
 
-  <title>Newsletter Signup</title>
+  <title>Newsletter</title>
 
   <!-- Some meta tags... -->
   <meta charset="utf-8">
@@ -32,9 +32,7 @@
 
 
 
-<body>
-
-
+<body id="newsletter">
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   
@@ -51,12 +49,9 @@
     <ul class="navbar-nav mr-auto">
     
     <!--
-    
-      <li class="nav-item">
+      <li class="nav-item active">
         <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
       </li>
-
-
 
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -69,41 +64,37 @@
           <a class="dropdown-item" href="#">Something else here</a>
         </div>
       </li>
-
 -->
 
+      <li class="nav-item">
+        <a class="nav-link" href="../about">#about</a>
+      </li>
 
       <li class="nav-item active">
-        <a class="nav-link" href="#">Newsletter</a>
+        <a class="nav-link" href="../newsletter">#newsletter</a>
       </li>
-      
-      
-      
       <li class="nav-item">
-        <a class="nav-link" href="https://indizr.wordpress.com/" target="blank">Blog</a>
+        <a class="nav-link" href="https://indizr.wordpress.com" target="blank">#blog</a>
       </li>
       
-      
-      
-      <!--
+   <!--
+   
       
       <li class="nav-item">
         <a class="nav-link" href="#">Contact</a>
       </li>
       
       
-      
-      
-      
-      
 
-       Sample code for a disabled link...
+
+      Sample code for a disabled link...
       
       <li class="nav-item">
         <a class="nav-link disabled" href="#">Disabled</a>
       </li>
 
     -->
+
     </ul>
     
     
@@ -119,6 +110,12 @@
 
 
 
+
+
+
+
+
+
   <div class="container-fluid">
   
       <div class="row">
@@ -129,7 +126,7 @@
       
      <div class="col-6">
 
-       <h1>Get a dose of independence in your inbox</h1>
+       <span id="cta"><h1>Get a dose of independence in your inbox</h1>
       
        <p>Sign up below to receive our free newsletter. It's the easiest way to keep up with the latest headlines about fixing news delivery and sustaining the journalism that democracy needs. Please join us!</p> 
    
@@ -175,7 +172,7 @@
 
 <!--End mc_embed_signup-->
 
-  
+</span>  
 
 
 
@@ -210,8 +207,6 @@
 <div class="footer bg-dark">
 
 
-
-
  <div class="container-fluid">
 
   <div class="row">
@@ -243,36 +238,33 @@
 
 </div> <!-- End footer -->
 
-   <style>
 
-
-        #mc_embed_signup {
-          display: block; 
-          clear: both; 
-          margin-top: 2rem;
-          }
-       
-       #mc_embed_signup>* * {
-         margin-bottom: 0.75rem;
-         }
-       
-          
-        .indicates-required {
-          font-style: italic;
-          color: #FF9100;
-          margin-bottom: 1rem;
-        }
-        
-        
-      </style>
-     
-
+    
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src="js/desmond.js"></script>
 
+   <!-- Matomo -->
+    
+    <script type="text/javascript">
+      var _paq = _paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+      _paq.push(["setCookieDomain", "*.indizr.com"]);
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+     (function() {
+       var u="//pmckay.com/matomo/";
+       _paq.push(['setTrackerUrl', u+'piwik.php']);
+       _paq.push(['setSiteId', '1']);
+       var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+       g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    
+    <!-- End Matomo Code -->
 
 </body>
 

@@ -7,19 +7,21 @@ Free to use under MIT License
 
 Contents
 
-- Basics & Typography
-- Navbar
-- Jumbotron & Cards
-- Footer
-
+- Typography & Basics
+  |- Navbar
+  |- Jumbotron & Cards
+  |- Footer
+- Homepage Styles
+- About Page Styles
+- Newsletter Page Styles
+- Custom Media Queries
 
 
 ----------------------------------------------------------
 
-Basics & Typography
+Typography & Basics
 
 ----------------------------------------------------------*/
-
 
 @import url("https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css");
 
@@ -81,15 +83,15 @@ h1, h2, h3, h4, h5, h6 {
 .container img, .container-fluid img {margin-bottom: 1.5rem;}
 
 
-/* ----------------------------------------------------------
 
-Navbar
 
-----------------------------------------------------------*/
+
+
+/* Now some default styles for the navbar... */
 
  
  .navbar {
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.5rem;
   }
  
  .nav-link {
@@ -123,11 +125,8 @@ Navbar
    color: #2A25B8;
    } 
 
-/* ----------------------------------------------------------
 
-Jumbotron & Cards
-
-----------------------------------------------------------*/
+/* Styles for the jumbotron & cards... */
 
 .jumbotron, .jumbotron>*, .album {background: none}
 
@@ -143,11 +142,9 @@ Jumbotron & Cards
 
 .album .row {}
 
-/* ----------------------------------------------------------
 
-Footer
 
-----------------------------------------------------------*/
+/* Footer styles... */
  
  .footer {
  
@@ -165,3 +162,126 @@ Footer
    }
  
 .footer a, .footer a:visited {color: white}
+
+
+
+
+/* ----------------------------------------------------------
+
+Homepage Styles
+
+----------------------------------------------------------*/
+
+   #homepage {
+      background: url('../img/graphpaper.jpg');
+      background-size: 225px auto;
+      background-repeat: repeat;
+    }
+    
+   #homepage .navbar {margin-bottom: 0}
+    
+   #homepage .jumbotron {
+    
+      margin-bottom: 0;
+   }
+  
+   #homepage .jumbotron h1 {font-weight: bold}
+   
+  #homepage .jumbotron * {}
+   
+  #homepage .card * {}
+   
+   #homepage .card {
+     border: 1px solid #a8a8a8
+     }
+     
+   
+   #homepage .album {}
+
+
+
+
+/* ----------------------------------------------------------
+
+About Page Styles
+
+----------------------------------------------------------*/
+
+#about nav {margin-bottom: 0;}
+
+#about #header { /* Styles for the photo/header area... */
+  padding-top: 18rem;
+  padding-bottom: 2rem;
+  background: url('../img/reader3000.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: white;
+  margin-bottom: 2rem;
+  }
+
+
+#about #twidget {}
+
+
+/* ----------------------------------------------------------
+
+Newsletter Page Styles
+
+----------------------------------------------------------*/
+
+#newsletter #mc_embed_signup {
+    display: block; 
+    clear: both; 
+    margin-top: 2rem;
+  }
+       
+#newsletter #mc_embed_signup>* * {
+    margin-bottom: 0.75rem;
+  }
+                 
+#newsletter .indicates-required {
+  font-style: italic;
+  color: white;
+    margin-bottom: 1rem;
+  }
+
+#newsletter #cta {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: #828282;
+  border-radius: 0.5rem;
+  color: white;
+  }
+
+
+/* ----------------------------------------------------------
+
+Custom Media Queries
+
+----------------------------------------------------------*/
+
+
+@media only screen and (max-width: 992px) { /* Coincides with default Bootstrap breakpoint for medium-sized devices */
+
+  .navbar-nav li:last-child {margin-bottom: 1.5rem}
+
+  .navbar .socicons img {
+    margin-left: 0; 
+    margin-right: 0.5rem;
+  }
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  
+  /* Cards have been looking funny at medium viewport widths. These styles help for now. May be expendable later, though. -- pm, 3/21/18 */
+  
+  #homepage .card h2 {margin-bottom: 2rem}
+  #homepage .card p {display: none}
+
+}
+
+
+
