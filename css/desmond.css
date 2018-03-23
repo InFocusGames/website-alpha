@@ -224,6 +224,12 @@ About Page Styles
 
 #about #twidget {}
 
+#about #credit {
+  display: block; 
+  text-align: right;
+  }
+
+#about #credit p {margin-bottom: 0.25rem}
 
 /* ----------------------------------------------------------
 
