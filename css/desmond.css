@@ -27,7 +27,8 @@ Typography & Basics
 
 @font-face {
   font-family: 'Hattori Hanzo';
-  src: url('hattori_hanzo/webfont.eot') format('eot'), url('fonts/hattori_hanzo/webfont.eot?iefix') format('eot'),
+  src: url('hattori_hanzo/webfont.eot') format('eot'), 
+       url('hattori_hanzo/webfont.eot?iefix') format('eot'),
        url('hattori_hanzo/webfont.woff') format('woff'),
        url('hattori_hanzo/webfont.ttf') format('truetype'),
        url('hattori_hanzo/webfont.svg#webfont') format('svg');
@@ -211,7 +212,7 @@ About Page Styles
 
 #about #header { /* Styles for the photo/header area... */
   padding-top: 18rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   background: url('../img/reader3000.jpg');
   background-size: cover;
   background-repeat: no-repeat;
