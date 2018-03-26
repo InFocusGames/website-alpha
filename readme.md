@@ -1,20 +1,5 @@
-#Server Notes
+# Indizr Website
 
-Indizr is served using a two-machine setup, one running Nginx and one running a series of Node mini-apps that are, in effect, microservices. (They're not containerized yet, but we'll handle that in a subsequent project.
+This repo contains all the HTML, CSS & JavaScript for the Indizr.com website.
 
-A rough schematic of the architecture...
-
-                                        ----------------------------------
-Archie1 Server (Nginx)                  |  API Gateway: Handles HTTPS     |
-                                        |  requests from users & reverse- |
-                                        |  proxies to Node apps as needed.|
-                                        -----------------------------------
-                                          /         |           |      \       
-                                         /          |           |       \      
-                                        /           |           |        \   
-Archie2 Server (Node)             knight(80)  site(8080)   posts(1229)   river(1337)   
-
-
-
-
-Editor app should run natively via the site. We shall see...
+This is essentially a development copy. We're currently migrating to a microservices structure, so each folder in the repo corresponds to what will be a container in our new setup. Files inside are basically the source code that will go into each container.
