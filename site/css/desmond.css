@@ -174,7 +174,7 @@ Homepage Styles
 ----------------------------------------------------------*/
 
    #homepage {
-      background: url('../img/graphpaper.jpg');
+      background: url("https://indizr.com/img/graphpaper.jpg");
       background-size: 225px auto;
       background-repeat: repeat;
     }
@@ -213,7 +213,7 @@ About Page Styles
 #about #header { /* Styles for the photo/header area... */
   padding-top: 18rem;
   padding-bottom: 1rem;
-  background: url('../img/reader3000.jpg');
+  background: url("https://indizr.com/img/reader3000.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
