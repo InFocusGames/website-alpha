@@ -14,6 +14,7 @@ Contents
 - Homepage Styles
 - About Page Styles
 - Newsletter Page Styles
+- DNDWG Page Styles
 - Custom Media Queries
 
 
@@ -186,7 +187,7 @@ Homepage Styles
       margin-bottom: 0;
    }
   
-   #homepage .jumbotron h1 {font-weight: bold}
+  #homepage .jumbotron h1 {font-weight: bold}
    
   #homepage .jumbotron * {}
    
@@ -260,6 +261,15 @@ Newsletter Page Styles
   border-radius: 0.5rem;
   color: white;
   }
+
+
+/* ----------------------------------------------------------
+
+DNDWG Page Styles
+
+----------------------------------------------------------*/
+
+#dndwg .row {padding-top: 2rem}
 
 
 /* ----------------------------------------------------------
