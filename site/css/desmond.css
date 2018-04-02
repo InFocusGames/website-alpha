@@ -174,7 +174,7 @@ Homepage Styles
 ----------------------------------------------------------*/
 
    #homepage {
-      background: url("https://indizr.com/img/graphpaper.jpg");
+      background: url("../img/graphpaper.jpg");
       background-size: 225px auto;
       background-repeat: repeat;
     }
