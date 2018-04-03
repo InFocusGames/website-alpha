@@ -71,7 +71,6 @@ h1, h2, h3, h4, h5, h6 {
  a, a:visited {
    color: #2A25B8; 
    /* Indizr orange... color: #FF9100; */
-   font-weight: bold;
    text-decoration: none;
   }
  
@@ -269,7 +268,46 @@ DNDWG Page Styles
 
 ----------------------------------------------------------*/
 
-#dndwg .row {padding-top: 3rem}
+#dndwg .row {
+  padding: 3rem 1.5rem 12rem 1.5rem;
+  max-width: 100%;
+  }
+
+#dndwg hr {
+  background: #dedede;
+  margin: 3rem 0;
+  }
+
+#dndwg .row>* {}
+
+#dndwg #sidenav {padding: 0.5rem 0;}
+
+
+#dndwg #sidenav h5 {margin-bottom: 0.5rem}
+
+#dndwg #sidenav span {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+#dndwg #sidenav ul {
+  padding: 0 0.25rem; 
+  list-style: inside;
+  }
+
+#dndwg #poptions {list-style: none;}
+
+#dndwg #poptions li {margin: 2rem 0;}
+
+#dndwg #poptions img {
+  background: black;
+  border: 2px solid black;
+  max-width: 1.5rem;
+  height: auto;
+  margin: 0 1rem 3px 0;
+  border-radius: 4px;
+ }
+
 
 
 /* ----------------------------------------------------------
@@ -299,6 +337,23 @@ Custom Media Queries
   #homepage .card p {display: none}
 
 }
+
+
+@media only screen and (max-width: 767px) { /* Styles for smaller devices and phones. Breakpoint coincides with Bootstrap's single-column layout... */
+
+   #dndwg .row {
+     padding-top: 1rem;
+   }
+
+   #dndwg #sidenav {
+     border-bottom: 1px solid black;
+     margin-bottom: 2rem;
+     text-align: center;
+     }
+
+}
+
+
 
 
 
