@@ -28,7 +28,7 @@ Typography & Basics
 
 @font-face {
   font-family: 'Hattori Hanzo';
-  src: url('hattori_hanzo/webfont.eot') format('eot'), 
+  src: url('hattori_hanzo/webfont.eot') format('eot'),
        url('hattori_hanzo/webfont.eot?iefix') format('eot'),
        url('hattori_hanzo/webfont.woff') format('woff'),
        url('hattori_hanzo/webfont.ttf') format('truetype'),
@@ -60,7 +60,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1rem;
   line-height: 1.3;
   }
-  
+
 /*
 .subhead {
   font-weight: normal;
@@ -69,14 +69,14 @@ h1, h2, h3, h4, h5, h6 {
 */
 
  a, a:visited {
-   color: #2A25B8; 
+   color: #2A25B8;
    /* Indizr orange... color: #FF9100; */
    text-decoration: none;
   }
- 
+
  a:hover {text-decoration: underline;}
- 
- 
+
+
  img {
    max-width: 100%;
    }
@@ -90,41 +90,41 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Now some default styles for the navbar... */
 
- 
+
  .navbar {
     margin-bottom: 1.5rem;
   }
- 
+
  .nav-link {
    position: relative;
    top: 0.5rem;
    }
- 
+
  .navbar-brand img {
    width: auto;
    max-width: 160px;
    margin-right: 1rem;
  }
- 
- .navbar-toggler {border:none} 
- 
+
+ .navbar-toggler {border:none}
+
  .navbar .socicons {
    }
- 
+
   .navbar .socicons img {
     width: auto;
     max-width: 35px;
     margin: 0.5rem 0.25rem;
   }
- 
+
  .dropdown-menu {}
 
  .dropdown-menu a, .dropdown-menu a:visited {color: white;}
- 
+
  .dropdown-menu a:hover {
    background: #f2f2f2;
    color: #2A25B8;
-   } 
+   }
 
 
 /* Styles for the jumbotron & cards... */
@@ -146,22 +146,22 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* Footer styles... */
- 
+
  .footer {
- 
-   /* 
+
+   /*
    Turning this off for now, leaving background color to Bootstrap to see how that looks...
    background: #2A25B8;
    background: #464646;
    */
-   
-   margin-top: 3rem; 
+
+   margin-top: 3rem;
    color: #ebebeb;
    padding: 2rem 0 12rem 0;
    position: relative;
    top: 2rem;
    }
- 
+
 .footer a, .footer a:visited {color: white}
 
 
@@ -174,32 +174,58 @@ Homepage Styles
 ----------------------------------------------------------*/
 
    #homepage {
-      background: url("../img/graphpaper.jpg");
+    background: url("../img/graphpaper.jpg");
       background-size: 225px auto;
       background-repeat: repeat;
-    }
-    
+
+      }
+
+/*
    #homepage .navbar {margin-bottom: 0}
-    
+
    #homepage .jumbotron {
-    
+
       margin-bottom: 0;
    }
-  
+
   #homepage .jumbotron h1 {font-weight: bold}
-   
+
   #homepage .jumbotron * {}
-   
+
   #homepage .card * {}
-   
+
    #homepage .card {
      border: 1px solid #a8a8a8
      }
-     
-   
+
+
    #homepage .album {}
 
+*/
 
+
+   #homepage #landingcontent {
+      margin: 4rem 0 8rem 0;
+      text-align: center;
+    }
+
+   #homepage #landingcontent img {
+       width: 96%;
+       max-width: 450px
+     }
+
+   #homepage #landingcontent .socicons img {
+       width: 25%;
+       max-width: 50px;
+     }
+
+   #homepage #landingcontent h1 {
+       margin: 2rem 0;
+       font-weight: bold;
+     }
+
+
+   #homepage #landingcontent p {font-size: 120%}
 
 
 /* ----------------------------------------------------------
@@ -225,7 +251,7 @@ About Page Styles
 #about #twidget {}
 
 #about #credit {
-  display: block; 
+  display: block;
   text-align: right;
   }
 
@@ -238,15 +264,15 @@ Newsletter Page Styles
 ----------------------------------------------------------*/
 
 #newsletter #mc_embed_signup {
-    display: block; 
-    clear: both; 
+    display: block;
+    clear: both;
     margin-top: 2rem;
   }
-       
+
 #newsletter #mc_embed_signup>* * {
     margin-bottom: 0.75rem;
   }
-                 
+
 #newsletter .indicates-required {
   font-style: italic;
   color: white;
@@ -291,7 +317,7 @@ DNDWG Page Styles
 }
 
 #dndwg #sidenav ul {
-  padding: 0 0.25rem; 
+  padding: 0 0.25rem;
   list-style: inside;
   }
 
@@ -322,7 +348,7 @@ Custom Media Queries
   .navbar-nav li:last-child {margin-bottom: 1.5rem}
 
   .navbar .socicons img {
-    margin-left: 0; 
+    margin-left: 0;
     margin-right: 0.5rem;
   }
 
@@ -330,9 +356,9 @@ Custom Media Queries
 
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-  
+
   /* Cards have been looking funny at medium viewport widths. These styles help for now. May be expendable later, though. -- pm, 3/21/18 */
-  
+
   #homepage .card h2 {margin-bottom: 2rem}
   #homepage .card p {display: none}
 
@@ -352,8 +378,3 @@ Custom Media Queries
      }
 
 }
-
-
-
-
-
