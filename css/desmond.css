@@ -8,13 +8,7 @@ Free to use under MIT License
 Contents
 
 - Typography & Basics
-  |- Navbar
-  |- Jumbotron & Cards
-  |- Footer
 - Homepage Styles
-- About Page Styles
-- Newsletter Page Styles
-- DNDWG Page Styles
 - Custom Media Queries
 
 
@@ -61,13 +55,6 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.3;
   }
 
-/*
-.subhead {
-  font-weight: normal;
-  font-style: italic;
-  }
-*/
-
  a, a:visited {
    color: #2A25B8;
    /* Indizr orange... color: #FF9100; */
@@ -86,295 +73,25 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-
-
-/* Now some default styles for the navbar... */
-
-
- .navbar {
-    margin-bottom: 1.5rem;
-  }
-
- .nav-link {
-   position: relative;
-   top: 0.5rem;
-   }
-
- .navbar-brand img {
-   width: auto;
-   max-width: 160px;
-   margin-right: 1rem;
- }
-
- .navbar-toggler {border:none}
-
- .navbar .socicons {
-   }
-
-  .navbar .socicons img {
-    width: auto;
-    max-width: 35px;
-    margin: 0.5rem 0.25rem;
-  }
-
- .dropdown-menu {}
-
- .dropdown-menu a, .dropdown-menu a:visited {color: white;}
-
- .dropdown-menu a:hover {
-   background: #f2f2f2;
-   color: #2A25B8;
-   }
-
-
-/* Styles for the jumbotron & cards... */
-
-.jumbotron, .jumbotron>*, .album {background: none}
-
-.jumbotron a.btn, .jumbotron a.btn:visited {color: white;}
-
-.card img {margin-bottom: 0.25rem;}
-
-.card a, .card a:visited {color: black;}
-
-.card a:hover {text-decoration: none;}
-
-.card-text, .album .row {margin-bottom: 1.5rem;}
-
-.album .row {}
-
-
-
-/* Footer styles... */
-
- .footer {
-
-   /*
-   Turning this off for now, leaving background color to Bootstrap to see how that looks...
-   background: #2A25B8;
-   background: #464646;
-   */
-
-   margin-top: 3rem;
-   color: #ebebeb;
-   padding: 2rem 0 12rem 0;
-   position: relative;
-   top: 2rem;
-   }
-
-.footer a, .footer a:visited {color: white}
-
-
-
-
 /* ----------------------------------------------------------
 
-Homepage Styles
+Homepage styles
 
 ----------------------------------------------------------*/
 
-   #homepage {
-    background: url("../img/graphpaper.jpg");
-      background-size: 225px auto;
-      background-repeat: repeat;
-
-      }
-
-/*
-   #homepage .navbar {margin-bottom: 0}
-
-   #homepage .jumbotron {
-
-      margin-bottom: 0;
-   }
-
-  #homepage .jumbotron h1 {font-weight: bold}
-
-  #homepage .jumbotron * {}
-
-  #homepage .card * {}
-
-   #homepage .card {
-     border: 1px solid #a8a8a8
-     }
-
-
-   #homepage .album {}
-
-*/
-
-
-   #homepage #landingcontent {
-      margin: 4rem 0 8rem 0;
-      text-align: center;
-    }
-
-   #homepage #landingcontent img {
-       width: 96%;
-       max-width: 450px
-     }
-
-   #homepage #landingcontent .socicons img {
-       width: 25%;
-       max-width: 50px;
-     }
-
-   #homepage #landingcontent h1 {
-       margin: 2rem 0;
-       font-weight: bold;
-     }
-
-
-   #homepage #landingcontent p {font-size: 120%}
-
-
-/* ----------------------------------------------------------
-
-About Page Styles
-
-----------------------------------------------------------*/
-
-#about nav {margin-bottom: 0;}
-
-#about #header { /* Styles for the photo/header area... */
-  padding-top: 18rem;
-  padding-bottom: 1rem;
-  background: url("https://indizr.com/img/reader3000.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  color: white;
-  margin-bottom: 2rem;
-  }
-
-
-#about #twidget {}
-
-#about #credit {
-  display: block;
-  text-align: right;
-  }
-
-#about #credit p {margin-bottom: 0.25rem}
-
-/* ----------------------------------------------------------
-
-Newsletter Page Styles
-
-----------------------------------------------------------*/
-
-#newsletter #mc_embed_signup {
-    display: block;
-    clear: both;
-    margin-top: 2rem;
-  }
-
-#newsletter #mc_embed_signup>* * {
-    margin-bottom: 0.75rem;
-  }
-
-#newsletter .indicates-required {
-  font-style: italic;
-  color: white;
-    margin-bottom: 1rem;
-  }
-
-#newsletter #cta {
-  display: inline-block;
-  padding: 1rem 2rem;
-  background: #828282;
-  border-radius: 0.5rem;
-  color: white;
-  }
-
-
-/* ----------------------------------------------------------
-
-DNDWG Page Styles
-
-----------------------------------------------------------*/
-
-#dndwg .row {
-  padding: 3rem 1.5rem 12rem 1.5rem;
-  max-width: 100%;
-  }
-
-#dndwg hr {
-  background: #dedede;
-  margin: 3rem 0;
-  }
-
-#dndwg .row>* {}
-
-#dndwg #sidenav {padding: 0.5rem 0;}
-
-
-#dndwg #sidenav h5 {margin-bottom: 0.5rem}
-
-#dndwg #sidenav span {
-  display: block;
-  margin-bottom: 2rem;
+#homepage {
+  padding: 4rem 0;
 }
 
-#dndwg #sidenav ul {
-  padding: 0 0.25rem;
-  list-style: inside;
+#homepage, #homepage * {}
+
+#homepage #landingcontent img {
+    max-width: 500px;
   }
-
-#dndwg #poptions {list-style: none;}
-
-#dndwg #poptions li {margin: 2rem 0;}
-
-#dndwg #poptions img {
-  background: black;
-  border: 2px solid black;
-  max-width: 1.5rem;
-  height: auto;
-  margin: 0 1rem 3px 0;
-  border-radius: 4px;
- }
-
 
 
 /* ----------------------------------------------------------
 
-Custom Media Queries
+Custom media queries
 
 ----------------------------------------------------------*/
-
-
-@media only screen and (max-width: 992px) { /* Coincides with default Bootstrap breakpoint for medium-sized devices */
-
-  .navbar-nav li:last-child {margin-bottom: 1.5rem}
-
-  .navbar .socicons img {
-    margin-left: 0;
-    margin-right: 0.5rem;
-  }
-
-}
-
-
-@media only screen and (min-width: 768px) and (max-width: 992px) {
-
-  /* Cards have been looking funny at medium viewport widths. These styles help for now. May be expendable later, though. -- pm, 3/21/18 */
-
-  #homepage .card h2 {margin-bottom: 2rem}
-  #homepage .card p {display: none}
-
-}
-
-
-@media only screen and (max-width: 767px) { /* Styles for smaller devices and phones. Breakpoint coincides with Bootstrap's single-column layout... */
-
-   #dndwg .row {
-     padding-top: 1rem;
-   }
-
-   #dndwg #sidenav {
-     border-bottom: 1px solid black;
-     margin-bottom: 2rem;
-     text-align: center;
-     }
-
-}
