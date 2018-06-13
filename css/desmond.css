@@ -80,15 +80,62 @@ Homepage styles
 ----------------------------------------------------------*/
 
 #homepage {
-  padding: 4rem 0;
+  padding: 0 0 4rem 0;
+  background: repeat url('../img/graphpaper.jpg');
+  background-size: 250px auto;
 }
 
 #homepage, #homepage * {}
+
+#homepage #landingcontent {
+  padding-top: 2rem;
+}
+
+#homepage #landingcontent h1 {
+   font-weight: bold;
+   font-size: 3.25rem;
+}
+
+#homepage #landingcontent p {
+   font-size: 1.4rem;
+}
+
 
 #homepage #landingcontent img {
     max-width: 500px;
   }
 
+
+
+
+
+/* ----------------------------------------------------------
+
+Navbar styles
+
+----------------------------------------------------------*/
+
+
+.navbar {
+  border-bottom: 1px solid #dddddd;
+  margin-bottom: 1.5rem;
+}
+
+.navbar .navbar-brand img {
+  width: 100%;
+  max-width: 160px;
+  margin-right: 1rem;
+}
+
+.navbar .social img {
+  margin: 3px;
+  max-width: 35px
+}
+
+.navbar ul {
+  position: relative;
+  top: 0.25rem;
+}
 
 /* ----------------------------------------------------------
 
