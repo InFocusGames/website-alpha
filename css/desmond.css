@@ -8,7 +8,12 @@ Free to use under MIT License
 Contents
 
 - Typography & Basics
+- Navbar Styles
 - Homepage Styles
+- Services Page Styles
+- Contact Page Styles
+- About Page Styles
+- DNDWG Page Styles
 - Custom Media Queries
 
 
@@ -75,7 +80,39 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ----------------------------------------------------------
 
-Homepage styles
+Navbar styles
+
+----------------------------------------------------------*/
+
+
+.navbar {
+  border-bottom: 1px solid #dddddd;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.navbar .navbar-brand img {
+  width: 100%;
+  max-width: 160px;
+  margin-right: 1rem;
+}
+
+.navbar .social img {
+  margin: 3px;
+  max-width: 35px
+}
+
+.navbar ul {
+  position: relative;
+  top: 0.5rem;
+}
+
+
+
+
+/* ----------------------------------------------------------
+
+Homepage Styles
 
 ----------------------------------------------------------*/
 
@@ -107,40 +144,57 @@ Homepage styles
   }
 
 
-
-
-
 /* ----------------------------------------------------------
 
-Navbar styles
+Services Page Styles
 
 ----------------------------------------------------------*/
 
 
-.navbar {
-  border-bottom: 1px solid #dddddd;
-  font-size: 1.2rem;
-  margin-bottom: 1.5rem;
-}
-
-.navbar .navbar-brand img {
-  width: 100%;
-  max-width: 160px;
-  margin-right: 1rem;
-}
-
-.navbar .social img {
-  margin: 3px;
-  max-width: 35px
-}
-
-.navbar ul {
-  position: relative;
-  top: 0.5rem;
-}
 
 /* ----------------------------------------------------------
 
-Custom media queries
+Contact Page Styles
+
+----------------------------------------------------------*/
+
+
+
+
+
+/* ----------------------------------------------------------
+
+About Page Styles
+
+----------------------------------------------------------*/
+
+
+
+
+
+/* ----------------------------------------------------------
+
+DNDWG Page Styles
+
+----------------------------------------------------------*/
+
+#dndwg {
+  padding: 4rem 0 6rem 0;
+}
+
+#dndwg #sidenav ul {
+  padding: 0;
+}
+
+#dndwg #sidenav li {
+  list-style: inside disc;
+}
+
+
+
+
+/* ----------------------------------------------------------
+
+Custom Media Queries
 
 ----------------------------------------------------------*/
