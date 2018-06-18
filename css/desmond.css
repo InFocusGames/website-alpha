@@ -86,7 +86,6 @@ Navbar styles
 
 
 .navbar {
-  border-bottom: 1px solid #dddddd;
   font-size: 1.2rem;
   margin-bottom: 1.5rem;
 }
@@ -123,6 +122,8 @@ Homepage Styles
 }
 
 #homepage, #homepage * {}
+
+#homepage .container-fluid {}
 
 #homepage #landingcontent {
   padding-top: 4rem;
@@ -168,6 +169,7 @@ About Page Styles
 
 ----------------------------------------------------------*/
 
+#about {padding-bottom: 8rem}
 
 
 
