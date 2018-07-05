@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .container img, .container-fluid img {margin-bottom: 1.5rem;}
 
-
+body  {padding: 0 0 3rem 0;}
 
 
 /* ----------------------------------------------------------
@@ -116,7 +116,6 @@ Homepage Styles
 ----------------------------------------------------------*/
 
 #homepage {
-  padding: 0 0 4rem 0;
   background: repeat url('../img/graphpaper.jpg');
   background-size: 250px auto;
 }
@@ -126,23 +125,33 @@ Homepage Styles
 #homepage .container-fluid {}
 
 #homepage #landingcontent {
-  padding-top: 4rem;
-  text-align: center;
+  padding: 3rem 0;
 }
 
 #homepage #landingcontent h1 {
    font-weight: bold;
    font-size: 3.5rem;
+   text-align: center;
 }
 
 #homepage #landingcontent p {
    font-size: 1.5rem;
 }
 
+#homepage #cards {
+  margin:3.5rem 0;
+}
 
-#homepage #landingcontent img {
-    max-width: 500px;
-  }
+
+#homepage #cards .btn, #homepage #cards .btn:visited {
+  color: white;
+ }
+
+#homepage #cards .card {
+  padding: 0.25rem;
+  border: 1px solid #cccccc;
+  margin: 0 auto;
+}
 
 
 /* ----------------------------------------------------------
@@ -200,3 +209,22 @@ DNDWG Page Styles
 Custom Media Queries
 
 ----------------------------------------------------------*/
+
+@media only screen and (max-width: 900px) {
+
+
+  #homepage #landingcontent {
+    padding: 1.5rem 0;
+  }
+
+  #homepage #landingcontent h1 {
+     font-weight: bold;
+     font-size: 2.5rem;
+  }
+
+  #homepage #landingcontent p {
+     font-size: 1.25rem;
+  }
+
+
+}
