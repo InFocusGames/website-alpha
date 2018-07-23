@@ -178,9 +178,22 @@ About Page Styles
 
 ----------------------------------------------------------*/
 
-#about {padding-bottom: 8rem}
+#about nav {margin-bottom: 0}
 
+#about {
+  padding-bottom: 8rem;
+}
 
+#about .flag .row {
+  min-height: 30rem;
+  background: url('../img/zahrani.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-bottom: 2rem;
+}
+
+#about .col-8 {background: white;}
 
 
 /* ----------------------------------------------------------
