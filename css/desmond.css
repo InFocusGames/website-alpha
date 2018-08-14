@@ -115,14 +115,23 @@ Footer Styles
 ----------------------------------------------------------*/
 
 footer {
-  padding: 2rem 0;
+  padding: 3rem 0 5rem 0;
   min-height: 12rem;
   margin-top: 4rem;
 }
 
-.footer * {color: #e8e8e8}
+.footer * {
+  color: #e8e8e8;
+  padding: 0;
+  list-style: disc inside;
+}
 
+.footer a, .footer a:visited {color: white;}
 
+.footer img {
+  width: auto;
+  max-width: 100px;
+}
 
 /* ----------------------------------------------------------
 
@@ -153,9 +162,7 @@ Homepage Styles
    font-size: 1.5rem;
 }
 
-#homepage #cards {
-  margin:3.5rem 0;
-}
+#homepage #cards {}
 
 
 #homepage #cards .btn, #homepage #cards .btn:visited {
@@ -165,9 +172,13 @@ Homepage Styles
 #homepage #cards .card {
   padding: 0.25rem;
   border: 1px solid #cccccc;
-  margin: 0 auto;
+  margin: 2rem auto;
 }
 
+#homepage #cards .card a h2, #homepage #cards .card a:visited h2 {
+  color: black;
+  font-weight: normal; /* This one seems to have a conflict with something further down. Not rendering properly for now. Hmmm.... */
+}
 
 /* ----------------------------------------------------------
 
