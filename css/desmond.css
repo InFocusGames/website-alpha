@@ -4,12 +4,12 @@ Desmond
 Copyright (c) 2018, Peter A. McKay
 Free to use under MIT License
 
-
 Contents
 
 - Typography & Basics
 - Navbar Styles
 - Footer Styles
+- Portfolio Styles
 - Homepage Styles
 - Services Page Styles
 - Contact Page Styles
@@ -17,14 +17,11 @@ Contents
 - DNDWG Page Styles
 - Custom Media Queries
 
-
 ----------------------------------------------------------
 
 Typography & Basics
 
 ----------------------------------------------------------*/
-
-@import url("https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css");
 
 @font-face {
   font-family: 'Hattori Hanzo';
@@ -49,33 +46,34 @@ Typography & Basics
 
 html, html * {
   font-family: 'Merriweather Sans Light', 'Open Sans', Helvetica, Arial, sans-serif;
-  line-height: 1.5;
   }
 
-.navbar, .navbar *, h1, h2, h3, h4, h5, h6 {
-font-family: 'Hattori Hanzo', 'Open Sans', Helvetica, Arial, sans-serif;
-}
-
 h1, h2, h3, h4, h5, h6 {
+  font-family: 'Hattori Hanzo', 'Open Sans', Helvetica, Arial, sans-serif;
   margin-bottom: 1rem;
   line-height: 1.3;
   }
 
- a, a:visited {
-   color: #2A25B8;
-   /* Indizr orange... color: #FF9100; */
-   text-decoration: none;
+a, a:visited {
+    color: #2A25B8;
+    text-decoration: none;
   }
 
- a:hover {text-decoration: underline;}
+a:hover {text-decoration: underline;}
+
+img {
+    max-width: 100%;
+  }
 
 
- img {
-   max-width: 100%;
-   }
+.btn, .btn:visited {
+  background: #2A25B8;
+  color: white;
+  }
 
-.container img, .container-fluid img {margin-bottom: 1.5rem;}
+.btn a, .btn a:visited {color: white}
 
+.btn:hover {background: #FF9100}
 
 
 /* ----------------------------------------------------------
@@ -84,27 +82,33 @@ Navbar styles
 
 ----------------------------------------------------------*/
 
-
 .navbar {
-  font-size: 1.2rem;
-  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #ededed;
 }
 
 .navbar .navbar-brand img {
   width: 100%;
-  max-width: 160px;
-  margin-right: 1rem;
+  max-width: 190px;
+  margin-top: 0.25rem;
+  margin-right: 1.5rem;
+  position: relative;
+  bottom: 0.5rem;
 }
 
-.navbar .social img {
-  margin: 3px;
-  max-width: 35px
-}
 
 .navbar ul {
   position: relative;
-  top: 0.5rem;
+  top: 0.25rem;
 }
+
+.navbar form {}
+
+.navbar .social img {
+  min-width: 35px;
+  display: inline;
+  margin: 0;
+}
+
 
 
 
@@ -114,24 +118,48 @@ Footer Styles
 
 ----------------------------------------------------------*/
 
+
 footer {
-  padding: 3rem 0 5rem 0;
-  min-height: 12rem;
-  margin-top: 4rem;
+  border-top: 1px solid #ededed;
+  margin-top: 2rem;
+  padding: 2rem 0 4rem 0;
 }
 
 .footer * {
-  color: #e8e8e8;
   padding: 0;
-  list-style: disc inside;
+  list-style: none;
 }
 
-.footer a, .footer a:visited {color: white;}
-
-.footer img {
-  width: auto;
-  max-width: 100px;
+footer h6 {
+   margin-bottom: 0.5rem;
 }
+
+
+
+/* ----------------------------------------------------------
+
+Portfolio Styles
+
+----------------------------------------------------------*/
+
+
+.portfolio {}
+
+.portfolio .btn {}
+
+.portfolio .card {
+  padding: 0.25rem;
+  border: 1px solid #bababa;
+  margin: 1rem auto;
+}
+
+.portfolio .card a h2, .portfolio .card a:visited h2 {
+  color: black;
+  font-weight: normal; /* This one seems to have a conflict with something further down. Not rendering properly for now. Hmmm.... */
+}
+
+
+
 
 /* ----------------------------------------------------------
 
@@ -140,41 +168,45 @@ Homepage Styles
 ----------------------------------------------------------*/
 
 
-#homepage, #homepage * {}
 
-#homepage .container-fluid {}
+
 
 #homepage #landingcontent {
-  padding: 4rem 0 6rem 0;
+  padding: 3.5rem 0;
+  text-align: center;
 }
+
 
 #homepage #landingcontent h1 {
    font-weight: bold;
-   font-size: 3.5rem;
-   text-align: center;
+   font-size: 3.25rem;
 }
 
 #homepage #landingcontent p {
    font-size: 1.5rem;
+   margin: 2rem 0;
 }
 
-#homepage #cards {}
-
-
-#homepage #cards .btn, #homepage #cards .btn:visited {
-  color: white;
- }
-
-#homepage #cards .card {
-  padding: 0.25rem;
-  border: 1px solid #cccccc;
-  margin: 2rem auto;
+#homepage #landingcontent .btn {
+  font-size: 1.2rem;
 }
 
-#homepage #cards .card a h2, #homepage #cards .card a:visited h2 {
-  color: black;
-  font-weight: normal; /* This one seems to have a conflict with something further down. Not rendering properly for now. Hmmm.... */
-}
+
+
+
+
+
+
+/*--
+
+
+
+
+
+
+
+
+
 
 /* ----------------------------------------------------------
 
@@ -199,7 +231,7 @@ Contact Page Styles
 About Page Styles
 
 ----------------------------------------------------------*/
-
+/*
 #about nav {margin-bottom: 0}
 
 #about {}
@@ -221,7 +253,7 @@ About Page Styles
 DNDWG Page Styles
 
 ----------------------------------------------------------*/
-
+/*
 #dndwg {
   padding: 4rem 0 6rem 0;
 }
@@ -243,21 +275,41 @@ Custom Media Queries
 
 ----------------------------------------------------------*/
 
-@media only screen and (max-width: 900px) {
+
+
+@media only screen and (max-width: 768px) {
+
+  .navbar .social {display: none}
+
+  footer {text-align: center}
+
+  footer h6 {font-weight: bold}
+
+.portfolio  .card {
+     border-left: none;
+     border-right: none;
+     border-bottom: none;
+     padding-top: 1.5rem;
+  }
+
+}
+
+
+
+
+@media only screen and (max-width: 576px) {
 
 
   #homepage #landingcontent {
-    padding: 1.5rem 0;
+     padding: 1.5rem;
   }
 
   #homepage #landingcontent h1 {
-     font-weight: bold;
-     font-size: 2.5rem;
+     font-size: 2.75rem;
   }
 
   #homepage #landingcontent p {
      font-size: 1.25rem;
   }
-
 
 }
