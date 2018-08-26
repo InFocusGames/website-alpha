@@ -135,7 +135,6 @@ footer h6 {
 }
 
 
-
 /* ----------------------------------------------------------
 
 Portfolio Styles
@@ -159,16 +158,11 @@ Portfolio Styles
 }
 
 
-
-
 /* ----------------------------------------------------------
 
 Homepage Styles
 
 ----------------------------------------------------------*/
-
-
-
 
 
 #homepage #landingcontent {
@@ -190,16 +184,6 @@ Homepage Styles
 #homepage #landingcontent .btn {
   font-size: 1.2rem;
 }
-
-
-
-
-
-
-
-/*--
-
-
 
 
 
@@ -231,21 +215,11 @@ Contact Page Styles
 About Page Styles
 
 ----------------------------------------------------------*/
-/*
-#about nav {margin-bottom: 0}
 
-#about {}
 
-#about .flag .row {
-  min-height: 30rem;
-  background: url('../img/zahrani.jpg');
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  margin-bottom: 2rem;
-}
+#about nav {margin-bottom: 2rem}
 
-#about .col-8 {background: white;}
+#about footer {margin-top: 6rem}
 
 
 /* ----------------------------------------------------------
