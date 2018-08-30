@@ -226,10 +226,24 @@ About Page Styles
 ----------------------------------------------------------*/
 
 
-#about nav {margin-bottom: 2rem}
+#about nav {}
 
 #about footer {margin-top: 6rem}
 
+#about #flag {
+  background: url('../img/singal.jpg');
+  background-size: cover;
+  background-position: center center;
+  padding-top: 20rem;
+  baseline: bottom;
+  margin-bottom: 2rem;
+}
+
+#about #flag h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 3.3rem
+}
 
 /* ----------------------------------------------------------
 
@@ -259,7 +273,6 @@ Custom Media Queries
 ----------------------------------------------------------*/
 
 
-
 @media only screen and (max-width: 768px) {
 
   .navbar .social {display: none}
@@ -276,8 +289,6 @@ Custom Media Queries
   }
 
 }
-
-
 
 
 @media only screen and (max-width: 576px) {
