@@ -1,6 +1,6 @@
-# Indizr Website
+# Indizr Website (Alpha)
 
-This repo contains all the HTML, CSS & JavaScript for the Indizr's static website, which is currently under development.
+This repo contains the HTML, CSS & JavaScript for the initial version of Indizr's static website. No longer maintaining this repo actively, since early-stage buildout is a completed project.
 
 Peter A. McKay
 peter[at]indizr[dot]com    
